@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Sorting Animated Visualizations</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="header-item" id="generateNew">
+					Generate New Array
+				</div>
+				<div class="header-item">
+					<lable>Change Array Size & Sorting Speed</lable>
+					<input type="range" id="changeSize" min="10" max="200" name="" style="background: white; cursor: pointer;" />
+				</div>
+				<div class="header-item" id="reverse">
+					Reverse
+				</div>
+				<div class="header-item" id="shuffle">
+					Shuffle
+				</div>
+			</header>
+			<section class="middle">
+				<section class="array-container" >
+					<div class="array">
+						
+					</div>
+				</section>
+				<section class="sidebar" id="sidebar">
+					<div class="sidebar-item" id="sort">Sort</div>
+				</section>
+
+			</section>
+		</div>
+		<script type="text/javascript" src="js/algos/SelectionSort.js"></script>
+		<script type="text/javascript" src="js/algos/BubbleSort.js"></script>
+		<script type="text/javascript" src="js/algos/HeapSort.js"></script>
+		<script type="text/javascript" src="js/algos/MergeSort.js"></script>
+		<script type="text/javascript" src="js/algos/QuickSort.js"></script>
+		<script type="text/javascript" src="js/ModelController.js"></script>
+		<script type="text/javascript" src="js/ViewController.js"></script>
+		<script type="text/javascript" src="js/AppController.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+html {
+	font-size: 10px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+header {
+	height: 7rem;
+	background-color: #34495e;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+header .header-item {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 3rem;
+	color: white;
+	cursor: pointer;
+	font-size: 1.6rem;
+	font-family: monospace;
+	border-right: 3px solid black;
+	outline: none;
+}
+.middle {
+	height: calc(100% - 7rem);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.array-container {
+	height: 100%;
+	width: calc(100% - 15rem);
+	overflow-x: scroll;
+	overflow-y: scroll;
+	background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100%);
+}
+.array-container .array {
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+.array-container .array .arrayElement {
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.array-container .just-sorted .arrayElement {
+	background: #a3da50 !important;
+}
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	height: 100%;
+	width: 15rem;
+	background-color: #34495e;
+	border-top: 1px solid white;
+	position: relative;
+}
+.sidebar .sidebar-item {
+	cursor: pointer;
+	outline: none;
+	padding: 1.5rem 2rem;
+	color: white;
+	font-size: 1.6rem;
+	font-family: monospace;
+	border-bottom: 2px solid black;
+}
+.sidebar .algo.active {
+	color: red;
+}
+.container.disabled .header-item {
+	color: red;
+	cursor: not-allowed;
+}
+.container.disabled .sidebar-item , .container.disabled .header-item #changeSize {
+	cursor: not-allowed;
+}
+#sort {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+#changeSize {
+	outline: none;
+	margin-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
